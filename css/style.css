@@ -229,7 +229,7 @@ background-color: var(--basic-extra-dark);
 }
 
 .button.disabled,
-button:disabled{
+button:disabled {
     color: default;
     opacity: 0.5;
     background-color: var(--basic-black);
@@ -254,8 +254,8 @@ button:disabled{
 }
 
 .main-footer{
-    /* display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
     padding: 60px;
     margin-top: 65px;
     color: var(--basic-white);
@@ -263,31 +263,19 @@ button:disabled{
     background-image: url("../img/pattern-dark.jpg");
     background-position: 0 0;
     background-repeat: repeat;
-    outline: 5px solid rgba(0, 255, 255,0.7);
     outline-offset: -5px;
+    justify-content: space-between;
 }
   
 .footer-contacts{
-    /* width: 340px;
-    justify-self: start;
-    margin: 0; */
-    width: 960px;
-    margin: 0 auto;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
     color: var(--basic-white);
     text-decoration: underline;
 }
 
-.footer-container{
-    /* max-width: 150px;
-    margin: 0;
-    justify-self: end;  */
-    width: 960px;
-    margin: 0 auto;
-    outline: solid rgba(9, 143, 233, 0.911) ;
-    outline-offset: -5px;
-    text-decoration: none;
+.footer-develop {
+    outline: 5px solid rgba(0, 255, 255, 0.3);
 }
 
 .footer-address{
@@ -304,9 +292,6 @@ button:disabled{
 }
 
 .footer-social{
-    /* width: 145; */
-    margin: 0 auto;
-    width: 960px;
     text-align: center;
     outline: solid rgba(0, 255, 0, 0.7);
     outline-offset: -5px;
