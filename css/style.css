@@ -254,8 +254,6 @@ button:disabled {
 }
 
 .main-footer{
-    display: flex;
-    flex-direction: row;
     padding: 60px;
     margin-top: 65px;
     color: var(--basic-white);
@@ -264,7 +262,6 @@ button:disabled {
     background-position: 0 0;
     background-repeat: repeat;
     outline-offset: -5px;
-    justify-content: space-between;
 }
   
 .footer-contacts{
@@ -272,6 +269,12 @@ button:disabled {
     outline-offset: -5px;
     color: var(--basic-white);
     text-decoration: underline;
+}
+
+.footer-containetr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-develop {
