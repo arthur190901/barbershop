@@ -52,6 +52,21 @@ a {
     height: auto;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
 /* grid */
 
 .page{
@@ -81,6 +96,7 @@ a {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    align-items: center;
 }
 
 .main-header-bar{
@@ -90,11 +106,9 @@ a {
 .site-navigation{
     margin: 0;
     padding: 0;
-    outline-offset: -5px;
     list-style: none;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
+    width: 640px;
+    min-height: 70px;
 }
 
 /* container */
@@ -114,17 +128,22 @@ a {
 .main-header-logo{
     order: 1;
     justify-self: center;
-    outline-offset: -5px;
+    margin-top: 80px;
 }
 
 /* user-navigation*/
 
 .site-navigation{
-    outline-offset: -5px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
 .site-navigation a,
 user-navigation a {
     color: var(--basic-white);
+    display: block;
+    padding: 25px 20px;
 }
 
 .site-navigation a:hover
@@ -138,6 +157,11 @@ background-color: var(--basic-extra-dark);
 
 .feature{
     margin-bottom: 80px;
+}
+
+.fa-square-full{
+    margin-bottom: 50px;
+    transform: rotate(45deg);
 }
 
 .feature-list{
@@ -167,9 +191,12 @@ background-color: var(--basic-extra-dark);
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 50px 80px;
     color: var(--basic-black);
     background-color: var(--basic-extra-light);
-    background-image: url("../img/pattern-light.jfif");
+    background-image:
+     url("../img/line.png"),
+     url("../img/pattern-light.jfif");
     background-position: center,0 0;
     background-repeat: no-repeat,repeat;
 }
@@ -186,6 +213,9 @@ background-color: var(--basic-extra-dark);
 }
 
 .news-list{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
     list-style: none;
 }
 
@@ -193,6 +223,7 @@ background-color: var(--basic-extra-dark);
 
 .gallery{
     outline-offset: -5px;
+    justify-self: end;
 }
 
 .gallery-content{
@@ -200,11 +231,23 @@ background-color: var(--basic-extra-dark);
     border: 7px solid var(--basic-white);
 }
 
+.gallary-container{
+    position: relative;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    text-align: center;
+}
+
+
+.appointment{
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+    text-align: start;
+}
 
 /* buttons */
 
 .button{
     font: inherit;
+    padding: 10px 30px;
     text-align: center;
     color: var(--basic-white);
     vertical-align: middle;
@@ -214,11 +257,40 @@ background-color: var(--basic-extra-dark);
 }
 
 .enter-button{
+ padding-right: 15px;
+ padding: 15px;
+ align-items: center;
+ display: block;
  font: inherit;
  color: var(--basic-white);
  background-color: var(--basic-black);
- outline-offset: -5px;
+ max-width: 140px;
 }
+
+.fa-door-open{
+    color: #4d4d4d;
+    right: 5px;
+}
+
+.enter-button .fa-door-open{
+    /* padding-left: 50px; */
+    position: relative;
+}
+
+.fa-door-open:hover,
+.fa-door-open:focus,
+.fa-door-open:active{
+    color: var(--basic-white);
+}
+
+.enter-button{
+    display: flex;
+}
+
+.feature-item h3{
+    font-size: 30px;
+}
+
 
 /* button */
 
@@ -244,6 +316,11 @@ button:disabled {
 /* appointments */
 
 .appointment-item input{
+    /* width: 140px; */
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    padding-left: 15px;
     font: inherit;
     background-color: transparent;
     border: 2px solid var(--basic-black);
@@ -253,8 +330,58 @@ button:disabled {
     border-color: var(--special);
 }
 
+.appointment-button{
+display: block;
+width: 100%;
+margin-top: 10px;
+margin-right: 0%;
+font: inherit;
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    border: none;
+}
+
+.appointment-button:hover,
+.appointment-button:focus,
+.appointment-button:active{
+    background-color: var(--special);
+}
+
+.appointment{
+   /* justify-self: center; */
+}
+
+.appointment-item{
+    /* width: 140px; */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.appointment-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-item label{
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
+}
+
+
+
+
+
+/* footer */
+
+
 .main-footer{
-    padding: 60px;
+    padding: 40px;
     margin-top: 65px;
     color: var(--basic-white);
     background-color: var(--basic-extra-dark);
@@ -265,8 +392,6 @@ button:disabled {
 }
   
 .footer-contacts{
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
     color: var(--basic-white);
     text-decoration: underline;
 }
@@ -275,10 +400,7 @@ button:disabled {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
 
-.footer-develop {
-    outline: 5px solid rgba(0, 255, 255, 0.3);
 }
 
 .footer-address{
@@ -294,11 +416,17 @@ button:disabled {
     text-decoration: none;
 }
 
+
+
+
+
 .footer-social{
     text-align: center;
-    outline: solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
 }
+
+
+
+
 
 .footer-social ul{
     list-style: none;
@@ -311,13 +439,26 @@ button:disabled {
 /* social button */
 
 .social-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: var(--basic-black);
     color: inherit;
 }
 
 .social-button:hover,
-.social-button:focus{
+.social-button:focus,
+.social-button:active{
+    background-color: var(--special);
     color: var(--basic-black);
-    background-color: var(--basic-white);
+}
+
+.footer-develop{
+    text-align: center;
 }
 
 .footer-copyright .button:hover

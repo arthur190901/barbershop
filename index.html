@@ -21,7 +21,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <img src="https://sergioneom.github.io/Barbershop-Thrandy/img/logo.png" width="368" height="153" alt="Логотип Барбершопая">
+                <img src="https://sergioneom.github.io/Barbershop-Thrandy/img/logo.png" width="368" height="195" alt="Логотип Барбершопая">
             </a>
             <div class="main-header-bar">
               <div class="main-navigation-wrapper">
@@ -32,30 +32,33 @@
                 <li><a href="doctype.html">Магазин</a></li>
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <a class="enter-button" href="blank.html">Вход</a>
+            <a class="enter-button" href="blank.html"><i class="fas fa-door-open"></i>Вход</a>
               </div>
             </div>
         </nav>
     </header>
 
     <main class="container">
-        <h1>Барбершоп "Бородинский"</h1>
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
         <section class="feature">
-             <h2>Преимущества</h2>
+             <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list">
           <li class="feature-item">
               <h3>Быстро</h3>
+              <i class="fas fa-square-full fa-lg"></i>
               <p>Мы делаем свою работу быстро! Два час пролетят незаметно, и вы - счастливый обладатель стильной стрижки. </p>
           </li>
 
           <li class="feature-item">
               <h3>Круто</h3>
+              <i class="fas fa-square-full fa-lg"></i>
               <p>Забудьте о том как вас стригли раньше. Мы из вас сделаем звезду футбола или кино! По крайней мере внешне.</p>
           </li>
 
           <li class="feature-item">
               <h3>Дорого</h3>
+              <i class="fas fa-square-full fa-lg"></i>
               <p>Наши мастера профессионалы своего дела, и не могут стоить дешево. К тому же, разве цена не дает определенный статус?!</p>
           </li>
         </ul>
@@ -82,13 +85,15 @@
 
     <section class="gallery">
         <h2>Фотогалерея</h2>
+        <div class="gallary-container">
         <figure class="gallery-content">
             <a href="#">
-                <img src="https://s3-media4.fl.yelpcdn.com/bphoto/H-ThileCoGmTFu3WuBplTg/o.jpg" width="268" height="164" alt="Интерьер">
+                <img src="https://s3-media4.fl.yelpcdn.com/bphoto/H-ThileCoGmTFu3WuBplTg/o.jpg" width="268" height="167" alt="Интерьер">
             </a>
         </figure>
         <button class="button" type="button" disabled>Назад </button>
         <button class="button" type="button">Вперед</button>
+        </div>
     </section>
 
     </div>
@@ -134,7 +139,8 @@
             <label for="appointment-phone">Телефон</label>
             <input id="appointment-phone" type="text" name="phone" placeholder="+7-000-000-00-00">
         </p>
-        <button class="button" type="submit">Отправить</button>
+
+        <button class="appointment-button" type="submit">Отправить</button>
         </form>
     </section>
 
@@ -145,41 +151,38 @@
     <footer class="main-footer">
         <div class="container footer-containetr">
             <section class="footer-contacts">
-                <h2>Как нас найти</h2>
+                <!-- <h2>Как нас найти</h2> -->
                 <p>
                     Барбершоп "Бородинский"<br>
                     Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
-                    <a class="footer-address" href="blank.html">Как нас найти></a><br>
+                    <a class="footer-address" href="blank.html">Как нас найти?</a><br>
                     Телефон: <a class="footer-phone" href="tel:+79888941599">+7 (988) 894-15-99</a>
                 </p>
             </section>
     
             <section class="footer-social">
                 <h2>Давайте дружить!</h2>
-                <ul>
+                <ul class="social">
                     <li> 
-                        <a class="social-button" href="#">
-                            <span>Вконтакте</span></a>
-                        <a class="link fab fa-vk"></a>
+                        <a class="social-button" href="https://www.vkontakte.ru">
+                         <i class="link fab fa-vk fa-lg"></i>  </a>
                     </li>
     
                     <li>
-                        <a class="social-button" href="#">
-                            <span>Фейсбук</span></a>
-                        <a class="fab fa-facebook-f"></a>
+                        <a class="social-button" href="https://www.facebook.com">
+                           <i class="fab fa-facebook-f fa-lg"></i> </a>
                     </li>
     
                     <li> 
-                        <a class="social-button" href="#">
-                            <span>Инстаграм</span></a>
-                            <a class="fab fa-instagram"></a>
+                        <a class="social-button" href="https://www.instagram.com">
+                         <i class="fab fa-instagram fa-lg"></i>  </a>
                     </li>
                 </ul>
             </section>
     
             <section class="footer-develop">
-                <p class="footer-container">
-                    Разработано: 
+                <p class="footer-link">
+                    <p>  Разработано: </p>
                     <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
                 </p>
             </section>

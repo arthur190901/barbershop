@@ -56,12 +56,13 @@
         </ul>
 
         <section class="filter-product">
+            <div class="product-unit">
             <h2>Фильтр товаров</h2>
             <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-product-fieldsrt">
                 <legend>Производители:</legend>
                 <ul class="filter-product-list">
-                    <li class="filter-item">
+                    <li class="filter-product-item">
                 <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
                 <label for="filter-baxter-of-california">Baxter-Of-California</label>       
                 </li>
@@ -110,8 +111,10 @@
             </fieldset>
 
             <button class="button" type="submit">Показать</button>
+            </div>
         </form>
         </section>
+
 
         <section class="list">
             <h2>Список товаров</h2>
@@ -120,11 +123,11 @@
                     <h3>Набор для путешествий «Baxter Of California»</h3>
                     <a class="list" href="product.html">
                         <p>
-                        <img src="https://cdn.fotosklad.ru/upload/iblock/6fc/6fc672a15f745a2c3f256c054487dbbf_thumb_c964fe4a8e60f8f.jpg"
+                        <img class="cotalog-image" src="https://cdn.fotosklad.ru/upload/iblock/6fc/6fc672a15f745a2c3f256c054487dbbf_thumb_c964fe4a8e60f8f.jpg"
                          width="220" height="165" alt="Набор для путешествий «Baxter Of California»">
                         </p>
                     </a>
-                    <p>
+                    <p class="item-price">
                         2999₽
                         <button class="button" type="button">Купить</button>
                     </p>
@@ -134,11 +137,11 @@
                     <h3>Увлажняющий кондиционер «Baxter Of California»</h3>
                     <a class="list" href="product.html">
                         <p>
-                            <img src="https://www.itkkit.ru/upload/resize_cache/image_import/6e8/737_737_1/6e862837821621b3c7c78845b64e455b.jpg"
+                            <img class="cotalog-image" src="https://www.itkkit.ru/upload/resize_cache/image_import/6e8/737_737_1/6e862837821621b3c7c78845b64e455b.jpg"
                              width="220" height="165" alt="Увлажняющий кондиционер «Baxter Of California»">
                         </p>
                     </a>
-                    <p>
+                    <p class="item-price">
                         750₽
                         <button class="button" type="button">Купить</button>
                     </p>
@@ -148,11 +151,11 @@
                     <h3>Гель для волос «Suavecito»</h3>
                     <a class="list" href="product.html">
                         <p>
-                            <img src="https://cf.shopee.com.my/file/2887e288de962e15b0b2778ae954dba0"
+                            <img class="cotalog-image" src="https://cf.shopee.com.my/file/2887e288de962e15b0b2778ae954dba0"
                             width="220" height="165" alt="Гель для волос «Suavecito»">
                         </p>
                     </a>
-                    <p>
+                    <p class="item-price">
                         290₽
                         <button class="button" type="button">Купить</button>
                     </p>
@@ -162,11 +165,11 @@
                     <h3>Глина для укладки волос «American Crew»</h3>
                     <a class="list" href="product.html">
                         <p>
-                            <img src="https://www.proficosmetics.ru/upload/iblock/789/7209394000_2.jpg"
+                            <img class="cotalog-image" src="https://www.proficosmetics.ru/upload/iblock/789/7209394000_2.jpg"
                             width="220" height="165" alt="Глина для укладки волос «American Crew»">
                         </p>
                     </a>
-                    <p>
+                    <p class="item-price">
                         500₽
                         <button class="button" type="button">Купить</button>
                     </p>
@@ -176,11 +179,11 @@
                     <h3>Гель для волос «American Crew»</h3>
                     <a class="list" href="product.html">
                       <p>
-                          <img src="https://evapro.ru/pic/big_copy/196286.jpg"
+                          <img class="cotalog-image" src="https://evapro.ru/pic/big_copy/196286.jpg"
                           width="220" height="165" alt="Гель для волос «American Crew»">
                       </p>
                     </a>
-                    <p>
+                    <p class="item-price">
                         300₽
                         <button class="button" type="button">Купить</button>
                     </p>
@@ -190,14 +193,14 @@
                     <h3>Набор для бритья «Baxter Of California»</h3>
                     <a class="list" href="product.html">
                         <p>
-                            <img src="https://www.elitebs.ru/image/cache/catalog/mens/9/216212005-baxter-of-california-best-badger-kist-dlya-britya-chernaya-sn-1200x800.jpg" 
+                            <img class="cotalog-image" src="https://www.elitebs.ru/image/cache/catalog/mens/9/216212005-baxter-of-california-best-badger-kist-dlya-britya-chernaya-sn-1200x800.jpg" 
                             width="220" height="165" alt="Набор для бритья «Baxter Of California»">
                         </p>
                     </a>          
-                    <p>
+                    <p class="item-price">
                         3999₽
                         <button class="button" type="button">Купить</button>
-                    </p>       
+                    </p>      
                 </li>
             </ul>
 
@@ -223,46 +226,49 @@
     </main>
 
     <footer class="main-footer">
-        <section class="footer-contacts">
-            <h2>Как нас найти</h2>
-            <p>
-                Барбершоп "Бородинский"<br>
-                Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
-                <a class="footer-address" href="blank.html">Как нас найти></a><br>
-                Телефон: <a class="footer-phone" href="tel:+79888941599">+7 (988) 894-15-99</a>
-            </p>
-        </section>
-
-        <section class="footer-social">
-             <h2>Давайте дружить!</h2>
-        <ul>
-             <li> 
-                 <a class="social-button" href="#">
-                     <span>Вконтакте</span></a>
-                 <a class="link fab fa-vk"></a>
-             </li>
-
-             <li>
-                 <a class="social-button" href="#">
-                     <span>Фейсбук</span></a>
-                 <a class="fab fa-facebook-f"></a>
-            </li>
-
-             <li> 
-                 <a class="social-button" href="#">
-                     <span>Инстаграм</span></a>
-                     <a class="fab fa-instagram"></a>
-             </li>
-        </ul>
-        </section>
-
-        <section>
-        <p class="footer-container">
-            Разработано: 
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
-        </section>
+        <div class="container footer-containetr">
+            <section class="footer-contacts">
+                <h2>Как нас найти</h2>
+                <p>
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
+                    <a class="footer-address" href="blank.html">Как нас найти></a><br>
+                    Телефон: <a class="footer-phone" href="tel:+79888941599">+7 (988) 894-15-99</a>
+                </p>
+            </section>
+    
+            <section class="footer-social">
+                <h2>Давайте дружить!</h2>
+                <ul>
+                    <li> 
+                        <button class="button" href="https://vkontakte.ru">
+                            <i class="fab fa-vk"></i> </button>
+                    </li>
+    
+                    <li>
+                        <button class="button" href="https://facebook.com">
+                           <i class="fab fa-facebook-f fa-lg"></i> </button>
+                    </li>
+    
+                    <li> 
+                        <button class="button" href="https://instagram.com">
+                         <i class="fab fa-instagram fa-lg"></i>  </button>
+                    </li>
+                </ul>
+            </section>
+    
+            <section class="footer-develop">
+                <p class="footer-container">
+                    Разработано: 
+                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                </p>
+            </section>
+        </div>
+        
     </footer>
+
+
+
 <!-- <section class="modal">
     <h2>Личный кабинет</h2>
     <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
