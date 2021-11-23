@@ -241,6 +241,7 @@ background-color: var(--basic-extra-dark);
 .appointment{
     outline: 5px solid rgba(0, 255, 255, 0.3);
     text-align: start;
+    /* margin-left: 30px; */
 }
 
 /* buttons */
@@ -351,10 +352,6 @@ font: inherit;
     background-color: var(--special);
 }
 
-.appointment{
-   /* justify-self: center; */
-}
-
 .appointment-item{
     /* width: 140px; */
     margin-top: 0;
@@ -381,7 +378,7 @@ font: inherit;
 
 
 .main-footer{
-    padding: 40px;
+    padding: 30px;
     margin-top: 65px;
     color: var(--basic-white);
     background-color: var(--basic-extra-dark);
@@ -424,12 +421,18 @@ font: inherit;
     text-align: center;
 }
 
+.footer-social h2{
+    margin-right: 160px;
+}
 
 
 
 
 .footer-social ul{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 200px;
 }
 
 .footer-social h2{
@@ -441,7 +444,7 @@ font: inherit;
 .social-button{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 4px;
     align-items: center;
     justify-content: center;
     width: 43px;
@@ -518,4 +521,8 @@ font: inherit;
 .restore:hover,
 .restore:focus{
     text-decoration: none;
+}
+
+.footer-contacts br{
+  text-decoration: none;
 }

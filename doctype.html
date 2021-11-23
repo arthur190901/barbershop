@@ -17,6 +17,7 @@
 </head>
 
 <body class="page-body inner-page">
+    <script src="https://kit.fontawesome.com/a812ab7cf0.js" crossorigin="anonymous"></script>
 
     <header class="main-header">
         <nav class="main-navigation">
@@ -25,14 +26,15 @@
                     <a class="main-header-logo" href="index.html"> 
                         <img src="https://uploads-ssl.webflow.com/5ca90d80d636b7fa305c2e62/5cab9e5f568a4a69231edfff_social_share.png" width="200" height="60" alt="Логотип Барбершопая">
                     </a>
+                    
                     <ul class="site-navigation">
-                        <li><a href="blank.html">Информация</a></li>
-                        <li><a href="blank.html">Новости</a></li>
-                        <li><a href="price.html">Прайс</a></li>
-                        <li><a href="catalog,html">Магазин</a></li>
-                        <li><a href="blank.html">Контакты</a></li>
+                        <li class="navigation-menu"><a href="blank.html">Информация</a></li>
+                        <li class="navigation-menu"><a href="blank.html">Новости</a></li>
+                        <li class="navigation-menu"><a href="price.html">Прайс</a></li>
+                        <li class="navigation-menu"><a href="catalog,html">Магазин</a></li>
+                        <li class="navigation-menu"><a href="blank.html">Контакты</a></li>
                     </ul>
-                    <a class="enter-button" href="blank.html">Вход</a>
+                    <a class="enter-button" href="blank.html"><i class="fas fa-door-open"></i>Вход</a>
                 </div>
             </div>
         </nav>
@@ -45,49 +47,55 @@
           <li>
               <a class="botton" href="index.html">Главная</a>
           </li>
-
+          <i class="fas fa-square-full fa-xs"></i>
           <li>
               <a class="botton" href="catalog.html">Магазин</a>
           </li>
-          
+          <i class="fas fa-square-full fa-xs"></i>
           <li>
-               <a class="disabled">Средства для ухода</a>
+               <a class="botton" disabled >Средства для ухода</a>
           </li>
         </ul>
 
         <section class="filter-product">
             <div class="product-unit">
-            <h2>Фильтр товаров</h2>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-product-fieldsrt">
                 <legend>Производители:</legend>
                 <ul class="filter-product-list">
-                    <li class="filter-product-item">
-                <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                    <li class="filter-option filter-checkbox">
+                        <input class="filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
                 <label for="filter-baxter-of-california">Baxter-Of-California</label>       
                 </li>
 
-                <li class="filter-product-item"> <input type="checkbox" name="mr-natty" id="filter-mr-natty" checked>
+                <li class="filter-option filter-checkbox">
+                    <input class="filter-input" type="checkbox" name="mr-natty" id="filter-mr-natty">
                 <label for="filter-mr-natty">Mr-Natty</label>
                 </li>
 
-                <li class="filter-product-item"> <input type="checkbox" name="suavecito" id="filter-suavecito">
+                <li class="filter-option filter-checkbox">
+                    <input class="filter-input-checkbox filter-input" type="checkbox" name="suavecito" id="filter-suavecito">
                 <label for="filter-suavecito">Suavecito</label>
                 </li>
 
-                <li class="filter-product-item"> <input type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                <li class="filter-option filter-checkbox">
+                    <input class="filter-input-checkbox filter-input" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
                 <label for="filter-malin-goetz">Malin+Goetz</label>
                 </li>
 
-                <li class="filter-product-item"> <input type="checkbox" name="murrays" id="filter-murrays">
+                <li class="filter-option filter-checkbox">
+                    <input class="filter-input-checkbox filter-input" type="checkbox" name="murrays" id="filter-murrays">
                 <label for="filter-murrays">Murray's</label>
                 </li>
 
-                <li class="filter-product-item"> <input type="checkbox" name="american-crew" id="filter-american-crew" checked>
+                <li class="filter-option filter-checkbox">
+                    <input class="filter-input-checkbox filter-input" type="checkbox" name="american-crew" id="filter-american-crew" checked>
                 <label for="filter-american-crew">American Crew</label>
                 </li>
             </ul>
-        </fieldset>
+
+        <fieldset class="radio-list">
 
             <fieldset class="group-fieldset">
                 <legend>Группы товаров:</legend>
@@ -117,18 +125,18 @@
 
 
         <section class="list">
-            <h2>Список товаров</h2>
+            <h2 class="visually-hidden">Список товаров</h2>
             <ul class="list-list">
                 <li class="list-item">
                     <h3>Набор для путешествий «Baxter Of California»</h3>
                     <a class="list" href="product.html">
                         <p>
-                        <img class="cotalog-image" src="https://cdn.fotosklad.ru/upload/iblock/6fc/6fc672a15f745a2c3f256c054487dbbf_thumb_c964fe4a8e60f8f.jpg"
+                        <img class="cotalog-image" src="https://www.darklyhandsome.com/1782-large_default/trousse-voyage-soins-homme-baxter.jpg"
                          width="220" height="165" alt="Набор для путешествий «Baxter Of California»">
                         </p>
                     </a>
                     <p class="item-price">
-                        2999₽
+                        <b>2999₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>
                 </li>
@@ -137,12 +145,12 @@
                     <h3>Увлажняющий кондиционер «Baxter Of California»</h3>
                     <a class="list" href="product.html">
                         <p>
-                            <img class="cotalog-image" src="https://www.itkkit.ru/upload/resize_cache/image_import/6e8/737_737_1/6e862837821621b3c7c78845b64e455b.jpg"
+                            <img class="cotalog-image" src="https://malegrooming.com.au/wp-content/uploads/2018/10/baxdailyproteinshampoo.jpg"
                              width="220" height="165" alt="Увлажняющий кондиционер «Baxter Of California»">
                         </p>
                     </a>
                     <p class="item-price">
-                        750₽
+                        <b>750₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>
                 </li>
@@ -156,7 +164,7 @@
                         </p>
                     </a>
                     <p class="item-price">
-                        290₽
+                        <b>290₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>
                 </li>
@@ -170,7 +178,7 @@
                         </p>
                     </a>
                     <p class="item-price">
-                        500₽
+                        <b>500₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>
                 </li>
@@ -184,7 +192,7 @@
                       </p>
                     </a>
                     <p class="item-price">
-                        300₽
+                        <b>300₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>
                 </li>
@@ -198,7 +206,7 @@
                         </p>
                     </a>          
                     <p class="item-price">
-                        3999₽
+                        <b>3999₽</b>
                         <button class="button" type="button">Купить</button>
                     </p>      
                 </li>
@@ -228,39 +236,39 @@
     <footer class="main-footer">
         <div class="container footer-containetr">
             <section class="footer-contacts">
-                <h2>Как нас найти</h2>
+                <!-- <h2>Как нас найти</h2> -->
                 <p>
                     Барбершоп "Бородинский"<br>
                     Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
-                    <a class="footer-address" href="blank.html">Как нас найти></a><br>
+                    <a class="footer-address" href="blank.html">Как нас найти?</a><br>
                     Телефон: <a class="footer-phone" href="tel:+79888941599">+7 (988) 894-15-99</a>
                 </p>
             </section>
     
             <section class="footer-social">
                 <h2>Давайте дружить!</h2>
-                <ul>
+                <ul class="social">
                     <li> 
-                        <button class="button" href="https://vkontakte.ru">
-                            <i class="fab fa-vk"></i> </button>
+                        <a class="social-button" href="https://www.vkontakte.ru">
+                            <i class="fab fa-vk fa-lg"></i>  </a>
                     </li>
     
                     <li>
-                        <button class="button" href="https://facebook.com">
-                           <i class="fab fa-facebook-f fa-lg"></i> </button>
+                        <a class="social-button" href="https://www.facebook.com">
+                            <i class="fab fa-facebook-f fa-lg"></i> </a>
                     </li>
     
                     <li> 
-                        <button class="button" href="https://instagram.com">
-                         <i class="fab fa-instagram fa-lg"></i>  </button>
+                        <a class="social-button" href="https://www.instagram.com">
+                         <i class="fab fa-instagram fa-lg"></i>  </a>
                     </li>
                 </ul>
             </section>
     
             <section class="footer-develop">
-                <p class="footer-container">
-                    Разработано: 
-                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                <p class="footer-link">
+                    <p>  Разработано: </p>
+                    <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
                 </p>
             </section>
         </div>

@@ -129,9 +129,6 @@ margin-right: 0;
     margin-top: 0;
 }
 
-
-
-
 .main-header{
     outline-offset: -5px;
     margin-bottom: 70px;
@@ -145,8 +142,35 @@ margin-right: 0;
     padding: 0;
     list-style: none;
     width: 940px;
+    margin-right: 146px;
     padding: 0 10px;
     display: flex;
+}
+
+.main-header-bar{
+    margin-bottom: -25px;
+}
+
+.fa-square-full{
+    transform: rotate(45deg)
+}
+
+.branches{
+    display: flex;
+
+}
+
+.navigation-menu{
+    margin: 20px;
+}
+
+.enter-button{
+    display: flex;
+}
+
+
+.main-navigation-wrapper{
+    height: 70px;
 }
 
 .site-navigation li {
@@ -172,10 +196,6 @@ margin-right: 0;
 user-navigation a {
     color: var(--basic-white);
     text-decoration: none;
-}
-
-.filter-product-item{
-    margin: 15px;
 }
 
 .group-item{
@@ -238,13 +258,6 @@ user-navigation a {
     margin: 0;
     margin-bottom: 40px;
     list-style: none;
-    outline-offset: -5px;
-}
-
-.filter-product{
-    /* width: 960px;
-    margin: auto 0; */
-    outline-offset: -5px;
 }
 
 /* lists */
@@ -253,7 +266,6 @@ user-navigation a {
     /* width: 960px;
     margin: auto 0; */
     margin-left: 60px;
-    outline-offset: -5px;
 }
 
 .list-item{
@@ -262,6 +274,8 @@ user-navigation a {
 
 .button{
     font: inherit;
+    padding: 10px 30px;
+    text-decoration: none;
     text-align: center;
     color: var(--basic-white);
     vertical-align: middle;
@@ -291,12 +305,92 @@ user-navigation a {
     list-style: none;
 }
 
+.filter-product{
+    width: 180px;
+}
+
+
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+#filter-mr-natty{
+    transform: scale(1.6);
+}
+
+#filter-baxter-of-california{
+    transform: scale(1.6);
+    
+}
+
+#filter-murrays{
+    transform: scale(1.6);
+}
+
+#filter-suavecito{
+    transform: scale(1.6);
+}
+
+#filter-american-crew{
+    transform: scale(1.6);
+}
+
+#filter-malin-goetz{
+    transform: scale(1.6);
+}
+
+
+#filter-shave{
+    transform: scale(1.6);
+}
+
+#filter-hair-care{
+    transform: scale(1.6);
+}
+
+#filter-accessories{
+    transform: scale(1.6);
+}
+
+
+
+.filter-option{
+    margin-bottom: 15px;
+}
+
 /* group-list */
 
 .group-list{
     list-style: none;
 }
 
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.social-button{
+    text-decoration: none;
+}
+
+.cotalog-image{
+   
+}
+
+.list-list h3{
+    order: 1;
+}
+
+.list-list p{
+    order: 2;
+}
 
 
 /* list-list */
@@ -334,7 +428,7 @@ number-item:disabled{
 /* footer */
 
 .main-footer{
-    padding: 60px;
+    padding: 30px;
     margin-top: 65px;
     color: var(--basic-white);
     background-color: var(--basic-extra-dark);
@@ -345,23 +439,15 @@ number-item:disabled{
 }
   
 .footer-contacts{
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
     color: var(--basic-white);
     text-decoration: underline;
 }
 
 .footer-containetr {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
 
-.footer-develop {
-    outline: 5px solid rgba(0, 255, 255, 0.3);
 }
 
 .footer-address{
@@ -377,36 +463,65 @@ number-item:disabled{
     text-decoration: none;
 }
 
+.footer-link button{
+    padding: 10px 30px;
+}
+
+.main-footer{
+    width: 960px;
+    height: 124px;
+    justify-self: center;
+}
+
+/* .footer-containetr{
+    background-image: url("../img/pattern-dark.jpg");
+} */
+
 .footer-social{
     text-align: center;
-    outline: solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
 }
+
+.footer-social h2{
+    margin-right: 160px;
+}
+
+
+
 
 .footer-social ul{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 200px;
 }
 
 .footer-social h2{
     font-size: 14px;
 }
 
-/* .container-footer-containetr{
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-} */
-
 /* social button */
 
 .social-button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    background-color: var(--basic-black);
     color: inherit;
 }
 
 .social-button:hover,
-.social-button:focus{
+.social-button:focus,
+.social-button:active{
+    background-color: var(--special);
     color: var(--basic-black);
-    background-color: var(--basic-white);
+}
+
+.footer-develop{
+    text-align: center;
 }
 
 .footer-copyright .button:hover
@@ -438,11 +553,65 @@ number-item:disabled{
 .social-button:hover,
 .social-button:focus{
     color: var(--basic-black);
-    background-color: var(--basic-white);
+    background-color: var(--special);
 }
 
 .footer-copyright .button:hover
 .footer-copyright .button:focus{
     color: var(--basic-black);
     background-color: var(--basic-white);
+}
+
+.item-price{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-price b{
+width: 112px;
+padding: 13px 25px 11px;
+box-sizing: border-box;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+}
+
+.item-price button{
+    padding: 13px 20.5px 11px;
+    margin-right: 0;
+    line-height: 15px;
+}
+
+.radio-list button{
+    padding: 6px 15px;
+}
+
+.number-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.number-item{
+    display: block;
+    padding: 10px 19px;
+    margin-right: 7px;
+}
+
+.fa-door-open{
+    color: #4d4d4d;
+    right: 5px;
+}
+
+.enter-button .fa-door-open{
+    /* padding-left: 50px; */
+    position: relative;
+}
+
+.fa-door-open:hover,
+.fa-door-open:focus,
+.fa-door-open:active{
+    color: var(--basic-white);
 }
