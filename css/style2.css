@@ -70,7 +70,7 @@ body{
 }
 
 .product-unit fieldset:first-child{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .product-unit legend{
@@ -151,13 +151,10 @@ margin-right: 0;
     margin-bottom: -25px;
 }
 
-.fa-square-full{
-    transform: rotate(45deg)
-}
+
 
 .branches{
     display: flex;
-
 }
 
 .navigation-menu{
@@ -199,7 +196,7 @@ user-navigation a {
 }
 
 .group-item{
-    margin: 15px;
+    margin-bottom: 15px;
 }
 
 /* .main-navigation-wrapper{
@@ -381,7 +378,7 @@ user-navigation a {
 }
 
 .cotalog-image{
-   
+   right: 30px;
 }
 
 .list-list h3{
@@ -444,10 +441,11 @@ number-item:disabled{
 }
 
 .footer-containetr {
+    width: 940px;
+    height: 124px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .footer-address{
@@ -467,11 +465,31 @@ number-item:disabled{
     padding: 10px 30px;
 }
 
-.main-footer{
+
+
+
+
+
+
+
+
+
+
+/* .main-footer{
     width: 960px;
     height: 124px;
     justify-self: center;
-}
+} */
+
+
+
+
+
+
+
+
+
+
 
 /* .footer-containetr{
     background-image: url("../img/pattern-dark.jpg");
@@ -615,3 +633,31 @@ text-align: center;
 .fa-door-open:active{
     color: var(--basic-white);
 }
+
+.menu-list{
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.fa-square-full{
+    transform: rotate(45deg);
+    margin-right: 27px;
+}
+
+.list-item{
+    transition: 0.3s;
+}
+
+.list-item:hover{
+    transform: scale(1.05);
+}
+
+.fa-door-open{
+    right: 300px;
+    top: 2px;
+}
+
+.enter-button{
+    
+}
+
