@@ -226,21 +226,36 @@
         justify-self: end;
     }
 
+    .gallery h2{
+        position: relative;
+        left: 35px;
+    }
+
     .gallery-content{
         background-color: var(--basic-dark);
         border: 7px solid var(--basic-white);
     }
 
+    .contact-information{
+        margin-bottom: 30px;
+    }
+
+    .contact-time{
+        margin-bottom: 50px;
+    }
+
     .gallary-container{
         position: relative;
-        outline: 5px solid rgba(0, 255, 0, 0.7);
         text-align: center;
     }
 
 
     .appointment{
-        outline: 5px solid rgba(0, 255, 255, 0.3);
         text-align: start;
+    }
+
+    .time-date{
+        font-style: italic;
     }
 
     /* buttons */
@@ -411,10 +426,6 @@
         text-decoration: none;
     }
 
-
-
-
-
     .footer-social{
         text-align: center;
     }
@@ -422,9 +433,6 @@
     .footer-social h2{
         margin-right: 160px;
     }
-
-
-
 
     .footer-social ul{
         list-style: none;
@@ -525,5 +533,144 @@
 
 .appointment{
     margin: auto;
+    position: relative;
+    left: 40px
 }
+
+
+
+
+/* modal */
+
+.modal{
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    background-image: url("../img/pattern-light.jfif");
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgb(0, 0, 0, 0.7);
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #aba9a7;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+}
+
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+.modal-login{
+    display: none;
+    top: 120px;
+    bottom: auto;
+    width: 300px;
+    padding: 50px 80px;
+}
+
+.modal-description{
+    margin-bottom: 25px;
+}
+
+.login-icon-user{
+    border: 2px solid var(--basic-black)
+}
+
+.login-icon-password{
+    width: 97%;
+    font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border: 2px solid var(--basic-black)
+}
+
+.login-icon-user{
+    width: 97%;
+    font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border: 2px solid var(--basic-black)
+}
+
+.login-fill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter-button-two{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 0%;
+    font: inherit;
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    border: none;
+}
+
+    .enter-button-two:hover,
+    .enter-button-two:focus,
+    .enter-button-two:active{
+        background-color: var(--special);
+    }
+
+.login-checkbox{
+    position: relative;
+    top: 12px;
+}
+
+.registration{
+    position: relative;
+    left: 90px;
+    color: var(--basic-black);
+    text-decoration: underline;
+}
+        
+
+
+
+
+/* modal map */
+
+
+.modal-map{
+    display: none;
+    width: 766px;
+    height: 560px;
+    border: 7px solid white;
+}
+
+
+
 

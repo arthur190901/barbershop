@@ -135,6 +135,7 @@
         display: flex;
         margin: 15px;
         margin-top: 0;
+        object-fit: contain;
     }
 
     .main-header{
@@ -289,14 +290,15 @@
         background-color: var(--special);
     }
 
-
-
     .enter-button{
+        position: relative;
+        right: 294.5px;
         font: inherit;
         color: var(--basic-white);
         text-decoration: none;
         background-color: var(--basic-black);
     }
+
 
     /* filter-product-list */
 
@@ -307,8 +309,6 @@
     .filter-product{
         width: 180px;
     }
-
-
 
     .visually-hidden{
         position: absolute;
@@ -412,13 +412,6 @@
     background-color: var(--special);
     }
 
-    /* .number-item.disabled,
-    number-item:disabled{
-        color: default;
-        opacity: 0.5;
-        background-color: var(--basic-black);
-    } */
-
 
     /* footer */
 
@@ -464,36 +457,6 @@
         padding: 10px 30px;
     }
 
-
-
-
-
-
-
-
-
-
-
-    /* .main-footer{
-        width: 960px;
-        height: 124px;
-        justify-self: center;
-    } */
-
-
-
-
-
-
-
-
-
-
-
-    /* .footer-containetr{
-        background-image: url("../img/pattern-dark.jpg");
-    } */
-
     .footer-social{
         text-align: center;
     }
@@ -501,9 +464,6 @@
     .footer-social h2{
         margin-right: 160px;
     }
-
-
-
 
     .footer-social ul{
         list-style: none;
@@ -619,7 +579,7 @@
 
     .fa-door-open{
         color: #4d4d4d;
-        right: 5px;
+        /* right: 5px; */
     }
 
     .enter-button .fa-door-open{
@@ -652,11 +612,9 @@
     }
 
     .fa-door-open{
-        right: 300px;
+        right: 5px;
         top: 2px;
     }
-
-
 
 
     /* market-place */
@@ -674,10 +632,17 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        margin-left: -10px;
+        position: relative;
+        bottom: 4px;
     }
 
     .listul{
         padding: 0;
+    }
+
+    .conection{
+        display: flex;
     }
 
     .photo-list{
@@ -692,6 +657,7 @@
     .font-size{
         font-size: 24px;
         margin-top: 60px;
+        margin-bottom: 25px;
     }
     
     .page-titletwo{
@@ -741,6 +707,7 @@
     }
 
     .item-price-two{
+        /* width: 210px; */
         background-color: #d8d7d7;
         display: flex;
      }
@@ -753,5 +720,129 @@
         line-height: 20px;
         text-align: center;
      }
+
+     .menu-listtwo{
+         margin-right: 27px;
+     }
+
+
+
+
+     /* modal */
+
+.modal{
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    background-image: url("../img/pattern-light.jfif");
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgb(0, 0, 0, 0.7);
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #aba9a7;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+}
+
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+.modal-login{
+    display: none;
+    top: 120px;
+    bottom: auto;
+    width: 300px;
+    padding: 50px 80px;
+}
+
+.modal-description{
+    margin-bottom: 25px;
+}
+
+.login-icon-user{
+    border: 2px solid var(--basic-black)
+}
+
+.login-icon-password{
+    width: 97%;
+    font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border: 2px solid var(--basic-black)
+}
+
+.login-icon-user{
+    width: 97%;
+    font-family: inherit;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border: 2px solid var(--basic-black)
+}
+
+.login-fill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter-button-two{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 0%;
+    font: inherit;
+    padding: 10px 30px;
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    border: none;
+}
+
+    .enter-button-two:hover,
+    .enter-button-two:focus,
+    .enter-button-two:active{
+        background-color: var(--special);
+    }
+
+.login-checkbox{
+    position: relative;
+    top: 12px;
+}
+
+.registration{
+    position: relative;
+    left: 90px;
+    color: var(--basic-black);
+    text-decoration: underline;
+}
     
 

@@ -72,12 +72,12 @@
             <ul class="news-list">
                 <li class="news-item">
                 <p>Нам наконец завезли Ягермастера! Теперь вы можете пропустить стаканчик во время стрижки!</p>
-                <time datetime="2021-10-15">15 октября</time>
+                <time class="time-date" datetime="2021-10-15">15 октября</time>
                 </li>
 
                 <li class="news-item">
                     <p>В нашей команде пополнение! Мухаммед-"Бритва" Стригунец. Обладатель множества титулов и наград пополнил наши стройные ряды</p>
-                    <time datetime="2021-10-17">17 октября</time>
+                    <time class="time-date" datetime="2021-10-17">17 октября</time>
                 </li>
             </ul>
             <a class="button" href="blank.html">Все новости</a>
@@ -88,11 +88,13 @@
             <div class="gallary-container">
             <figure class="gallery-content">
                 <a href="#">
-                    <img src="https://s3-media4.fl.yelpcdn.com/bphoto/H-ThileCoGmTFu3WuBplTg/o.jpg" width="268" height="167" alt="Интерьер">
+                    <img src="https://s3-media4.fl.yelpcdn.com/bphoto/H-ThileCoGmTFu3WuBplTg/o.jpg" width="290" height="200" alt="Интерьер">
                 </a>
             </figure>
+            <div class="buttons">
             <button class="button" type="button" disabled>Назад </button>
             <button class="button" type="button">Вперед</button>
+            </div>
             </div>
         </section>
 
@@ -102,12 +104,12 @@
 
         <section class="contacts">
             <h2>Контактная информация</h2>
-                <p>
+                <p class="contact-information">
                 Барбершоп "Бородинский"<br>
                 Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
                 Телефон: <a class="contacts-phone" href="tel:+79888941599">+7 (988) 894-15-99</a>
                 </p>
-                <p>
+                <p class="contact-time">
                     Время работы:<br>
                     пн-пт: с 10:00 до 22:00<br>
                     сб-вс: с 10:00 до 22:00
@@ -192,39 +194,48 @@
             
         </footer>
 
-    <!-- <section class="modal">
-        <h2>Личный кабинет</h2>
-        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+      <section class="modal modal-login">
+        <h2> вход Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
         <form class="login-form" action="https://echo.htmlacademy.ru"method="post">
+    
             <p>
-            <label for="login-login">Логин</label>
-            <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+            <label class="visually-hidden" for="login-login">Логин</label>
+            <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
             </p>
             <p>
-            <label for="login-password">Пароль</label>
-            <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="********">
+            <label class="visually-hidden" for="login-password">Пароль</label>
+            <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
             </p>
+
             <p>
+                 <div class="login-fill">
             <label class="login-checkbox">
+               
                 <input type="checkbox" name="remember">
                 Запомните меня 
             </label>
             </p>
             <p>
             <a class="restore" href="blank.html">Забыл пароль</a>
-            <button class="button" type="submit">Войти</button>
+            </div>
+
+            <button class="enter-button-two" type="submit">Войти</button>
             </p>
+            <a class="registration" href="blank.html">Зарегистрироваться</a>
 
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </section>
 
-    <section class="modal modal-map">
-    <h2>Как до нас добраться?</h2>
-    <button class="modal-close" type="button">Закрыть</button>
-    </section> -->
+        <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d295.2912102864855!2d39.72583204535254!3d47.22268712719347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9168d1bf1fb%3A0xa30bcf7bda413fd3!2z0JDQtNCy0L7QutCw0YLRgdC60LjQuSDQutCw0LHQuNC90LXRgiDQqNC40YDRiNC-0LLQvtC5INCQLtCQLg!5e0!3m2!1sru!2sru!4v1638199052484!5m2!1sru!2sru"
+         width="766" height="560" style="border:0;" allowfullscreen="" title="Барбершоп ул Социалистическая 128" loading="lazy"></iframe>
+        <button class="modal-close" type="button"></button>
+        </section>
 
-</body>
+    </body>
 </html>
 
 
