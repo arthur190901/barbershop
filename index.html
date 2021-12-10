@@ -18,6 +18,7 @@
 
     <body>
         <script src="https://kit.fontawesome.com/a812ab7cf0.js" crossorigin="anonymous"></script>
+        
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo">
@@ -155,7 +156,7 @@
         <footer class="main-footer">
             <div class="container footer-containetr">
                 <section class="footer-contacts">
-                    <!-- <h2>Как нас найти</h2> -->
+                        <h2 class="visually-hidden">Как нас найти</h2>
                     <p>
                         Барбершоп "Бородинский"<br>
                         Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
@@ -185,9 +186,10 @@
                 </section>
         
                 <section class="footer-develop">
+                    <h2 class="visually-hidden">Разработано</h2>
                     <p class="footer-link">
-                        <p>  Разработано: </p>
-                        <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
+                        <br class="develop">  Разработано: 
+                        <br> <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
                     </p>
                 </section>
             </div>
@@ -197,31 +199,32 @@
       <section class="modal modal-login">
         <h2> вход Личный кабинет</h2>
         <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru"method="post">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     
             <p>
-            <label class="visually-hidden" for="login-login">Логин</label>
-            <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
+                <label class="visually-hidden" for="login-login">Логин</label>
+                <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
             </p>
             <p>
-            <label class="visually-hidden" for="login-password">Пароль</label>
-            <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
             </p>
 
-            <p>
-                 <div class="login-fill">
-            <label class="login-checkbox">
-               
-                <input type="checkbox" name="remember">
-                Запомните меня 
-            </label>
+        <div class="login-fill">
+            <p> 
+                     <label class="login-checkbox">
+                
+                      <input type="checkbox" name="remember">
+                      Запомните меня 
+                     </label>      
             </p>
-            <p>
-            <a class="restore" href="blank.html">Забыл пароль</a>
-            </div>
+        </div>
 
-            <button class="enter-button-two" type="submit">Войти</button>
+            <p>
+                <a class="restore" href="blank.html">Забыл пароль</a>
+                <button class="enter-button-two" type="submit">Войти</button>
             </p>
+
             <a class="registration" href="blank.html">Зарегистрироваться</a>
 
         </form>

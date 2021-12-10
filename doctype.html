@@ -53,14 +53,15 @@
             </li>
             
             <li class="menu-list">
-                <a class="botton" disabled ><i class="fas fa-square-full fa-xs"></i>Средства для ухода</a>
+                <a class="botton"><i class="fas fa-square-full fa-xs"></i>Средства для ухода</a>
             </li>
             </ul>
 
+ 
             <section class="filter-product">
                 <div class="product-unit">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru">
+               <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru"></form>
                 <fieldset class="filter-product-fieldsrt">
                     <legend>Производители:</legend>
                     <ul class="filter-product-list">
@@ -94,8 +95,10 @@
                     <label for="filter-american-crew">American Crew</label>
                     </li>
                 </ul>
+                </fieldset>
 
-            <fieldset class="radio-list">
+            <section class="radio-list">
+                <h2 class="visually-hidden">Группы товаров</h2>
 
                 <fieldset class="group-fieldset">
                     <legend>Группы товаров:</legend>
@@ -117,12 +120,12 @@
                     </ul>
 
                 </fieldset>
-
+                  </div>
                 <button class="button" type="submit">Показать</button>
-                </div>
-            </form>
+                
+              
             </section>
-
+           </form>
 
             <section class="list">
                 <h2 class="visually-hidden">Список товаров</h2>
@@ -218,7 +221,7 @@
                     </li>
 
                     <li>
-                        <a class="number-item" disabled>2</a>
+                        <a class="number-item">2</a>
                     </li>
 
                     <li>
@@ -236,7 +239,7 @@
         <footer class="main-footer">
             <div class="container footer-containetr">
                 <section class="footer-contacts">
-                    <!-- <h2>Как нас найти</h2> -->
+                        <h2 class="visually-hidden">Как нас найти</h2>
                     <p>
                         Барбершоп "Бородинский"<br>
                         Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
@@ -250,12 +253,12 @@
                     <ul class="social">
                         <li> 
                             <a class="social-button" href="https://www.vkontakte.ru">
-                                <i class="fab fa-vk fa-lg"></i>  </a>
+                            <i class="link fab fa-vk fa-lg"></i>  </a>
                         </li>
         
                         <li>
                             <a class="social-button" href="https://www.facebook.com">
-                                <i class="fab fa-facebook-f fa-lg"></i> </a>
+                            <i class="fab fa-facebook-f fa-lg"></i> </a>
                         </li>
         
                         <li> 
@@ -266,9 +269,10 @@
                 </section>
         
                 <section class="footer-develop">
+                    <h2 class="visually-hidden">Разработано</h2>
                     <p class="footer-link">
-                        <p>  Разработано: </p>
-                        <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
+                        <br class="develop">  Разработано: 
+                        <br> <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
                     </p>
                 </section>
             </div>
@@ -280,31 +284,32 @@
         <section class="modal modal-login">
             <h2> вход Личный кабинет</h2>
             <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
-            <form class="login-form" action="https://echo.htmlacademy.ru"method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         
                 <p>
-                <label class="visually-hidden" for="login-login">Логин</label>
-                <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
+                    <label class="visually-hidden" for="login-login">Логин</label>
+                    <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
                 </p>
                 <p>
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
+                    <label class="visually-hidden" for="login-password">Пароль</label>
+                    <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
                 </p>
     
-                <p>
-                     <div class="login-fill">
-                <label class="login-checkbox">
-                   
-                    <input type="checkbox" name="remember">
-                    Запомните меня 
-                </label>
+            <div class="login-fill">
+                <p> 
+                         <label class="login-checkbox">
+                    
+                          <input type="checkbox" name="remember">
+                          Запомните меня 
+                         </label>      
                 </p>
-                <p>
-                <a class="restore" href="blank.html">Забыл пароль</a>
-                </div>
+            </div>
     
-                <button class="enter-button-two" type="submit">Войти</button>
+                <p>
+                    <a class="restore" href="blank.html">Забыл пароль</a>
+                    <button class="enter-button-two" type="submit">Войти</button>
                 </p>
+    
                 <a class="registration" href="blank.html">Зарегистрироваться</a>
     
             </form>

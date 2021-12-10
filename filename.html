@@ -55,20 +55,22 @@
                 </li>
                 
                 <li class="menu-listtwo">
-                    <a class="botton" disabled ><i class="fas fa-square-full fa-xs"></i>НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
+                    <a class="botton"><i class="fas fa-square-full fa-xs"></i>НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
                 </li>
                 </ul>
             </section>
         
 
             <section class="large-container">
+                <h2 class="visually-hidden">Контейнер</h2>
 
             <section>
+                <h2 class="visually-hidden">Фото</h2>
                 <div class="main-photo">
 
 
                     <div class="photo-list">
-                 <h1 class="visually-hidden">Изображение товара</h1>
+                 <h3 class="visually-hidden">Изображение товара</h3>
                    <img src="https://www.darklyhandsome.com/1782-large_default/trousse-voyage-soins-homme-baxter.jpg" width="470" height="460" alt="baxter-of-california">
                     </div>
                  <div class="photo-items">
@@ -76,9 +78,11 @@
                   <img src="https://d3pllp7nz3wmw5.cloudfront.net/product_images/22669614114-2_FULL.jpg"  width="140" height="149" alt="photo">
                   <img src="https://malegrooming.com.au/wp-content/uploads/2018/10/b00141fb9y_1_new_3_lg.jpg" width="140" height="149" alt="photo">
                   </div>
+                </div>
             </section>
 
             <section class="sectiontwo">
+                <h2 class="visually-hidden">Секция</h2>
                 <div>
                     
                 <div class="second-text">
@@ -95,16 +99,16 @@
                     <b>2900₽</b>
                     <button class="button" type="button">Купить</button>
                 </p>
-                <div>
+                <fieldset class="just-fieldset">
                 <legend class="font-size">В НАБОР ВХОДЯТ:</legend>
-                <ul class="listul">
-                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><li class="listtwo">СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</li></div>
-                    <div class="conection"><i class="fas fa-square-full fa-xs"></i> <li class="listtwo">УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</li></div>
-                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><li class="listtwo">КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</li></div>
-                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><li class="listtwo">КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</li></div>
-                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><li class="listtwo">УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</li></div>
-                </ul>
-              </div>
+                <div class="listul">
+                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><br class="listtwo">СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</div>
+                    <div class="conection"><i class="fas fa-square-full fa-xs"></i> <br class="listtwo">УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</div>
+                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><br class="listtwo">КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</div>
+                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><br class="listtwo">КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</div>
+                    <div class="conection"><i class="fas fa-square-full fa-xs"></i><br class="listtwo">УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</div>
+                </div>
+              </fieldset>
             </div>
             </section>
 
@@ -121,9 +125,9 @@
 
     
 
-        <footer class="container footer-containetr">
+        <div class="container footer-containetr">
             <section class="footer-contacts">
-                <!-- <h2>Как нас найти</h2> -->
+                    <h2 class="visually-hidden">Как нас найти</h2>
                 <p>
                     Барбершоп "Бородинский"<br>
                     Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br>
@@ -153,13 +157,51 @@
             </section>
     
             <section class="footer-develop">
+                <h2 class="visually-hidden">Разработано</h2>
                 <p class="footer-link">
-                    <p>  Разработано: </p>
-                    <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
+                    <br class="develop">  Разработано: 
+                    <br> <a class="button" href="https://github.com/arthur190901">GIT  HUB</a>
                 </p>
             </section>
-        </footer>
+        </div>
+        
     </footer>
+
+    <section class="modal modal-login">
+        <h2> вход Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    
+            <p>
+                <label class="visually-hidden" for="login-login">Логин</label>
+                <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="Bведите логин">
+            </p>
+            <p>
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="login-icon-password" id="login-password" type="password" name="password" placeholder="Bведите пароль">
+            </p>
+
+        <div class="login-fill">
+            <p> 
+                     <label class="login-checkbox">
+                
+                      <input type="checkbox" name="remember">
+                      Запомните меня 
+                     </label>      
+            </p>
+        </div>
+
+            <p>
+                <a class="restore" href="blank.html">Забыл пароль</a>
+                <button class="enter-button-two" type="submit">Войти</button>
+            </p>
+
+            <a class="registration" href="blank.html">Зарегистрироваться</a>
+
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </section>
+
     
 </body>
 </html>

@@ -513,7 +513,7 @@
         background-image:url("../img/pattern-dark.jpg") ;
         background-position: 0 0;
         background-repeat: repeat;
-        box-shadow: 0 30px 50px rgba (0, 0, 0, 0.7);
+        box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     }
 
     .modal-login h2{
@@ -658,10 +658,6 @@
         font-size: 24px;
         margin-top: 60px;
         margin-bottom: 25px;
-    }
-    
-    .page-titletwo{
-        /* outline: 5px solid rgba(0, 255, 0, 0.7); */
     }
 
     .main-photo{
@@ -845,4 +841,15 @@
     text-decoration: underline;
 }
     
+
+.conection{
+    align-items: center;
+}
+
+.just-fieldset{
+    border: none;
+}
+
+
+
 
