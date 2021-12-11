@@ -58,11 +58,12 @@
             </ul>
 
  
-            <section class="filter-product">
-                <div class="product-unit">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
-               <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru"></form>
-                <fieldset class="filter-product-fieldsrt">
+            <aside class="filter-product">
+                <form class="filter-product-form" method="GET" action="https://echo.htmlacademy.ru">
+                <section>
+                        <h2 class="visually-hidden">Фильтр товаров</h2>
+                   
+                        <fieldset class="filter-product-fieldsrt">
                     <legend>Производители:</legend>
                     <ul class="filter-product-list">
                         <li class="filter-option filter-checkbox">
@@ -94,38 +95,40 @@
                         <input class="filter-input-checkbox filter-input" type="checkbox" name="american-crew" id="filter-american-crew" checked>
                     <label for="filter-american-crew">American Crew</label>
                     </li>
-                </ul>
-                </fieldset>
-
-            <section class="radio-list">
-                <h2 class="visually-hidden">Группы товаров</h2>
-
-                <fieldset class="group-fieldset">
-                    <legend>Группы товаров:</legend>
-                    <ul class="group-list">
-                        <li class="group-item">
-                            <input type="radio" name="product-group" value="shaving" id="filter-shave">
-                            <label for="filter-shave">Бритвенные принадлежности</label>
-                        </li>
-                    
-                        <li class="group-item">
-                            <input type="radio" name="product-group" value="hair-care" id="filter-hair-care" checked>
-                            <label for="filter-hair-care">Средства для ухода</label>
-                        </li>
-
-                        <li class="group-item">
-                            <input type="radio" name="product-group" value="accessories" id="filter-accessories">
-                            <label for="filter-accessories">Аксессуары</label>
-                        </li>
                     </ul>
+                    </fieldset>
+                </section>
 
-                </fieldset>
-                  </div>
-                <button class="button" type="submit">Показать</button>
-                
-              
-            </section>
-           </form>
+                <section class="radio-list">
+                    <h2 class="visually-hidden">Группы товаров</h2>
+
+                    <fieldset class="group-fieldset">
+                        <legend>Группы товаров:</legend>
+                        <ul class="group-list">
+                            <li class="group-item">
+                                <input type="radio" name="product-group" value="shaving" id="filter-shave">
+                                <label for="filter-shave">Бритвенные принадлежности</label>
+                            </li>
+                        
+                            <li class="group-item">
+                                <input type="radio" name="product-group" value="hair-care" id="filter-hair-care" checked>
+                                <label for="filter-hair-care">Средства для ухода</label>
+                            </li>
+
+                            <li class="group-item">
+                                <input type="radio" name="product-group" value="accessories" id="filter-accessories">
+                                <label for="filter-accessories">Аксессуары</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+                    
+                    <button class="button" type="submit">Показать</button>
+                </section>
+              </form>
+         </aside>
+           
+          
 
             <section class="list">
                 <h2 class="visually-hidden">Список товаров</h2>

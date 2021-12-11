@@ -851,5 +851,29 @@
 }
 
 
+.filter-product-fieldsrt legend{
+    font-size: 20px;
+}
 
+.filter-product-fieldsrt{
+    border: none;
+}
 
+.group-fieldset{
+    text-align: start;
+    border: none;
+}
+
+.group-fieldset legend{
+    font-size: 20px;
+}
+
+.group-list{
+    position: relative;
+    right: 40px;
+}
+
+.filter-product-list{
+    position: relative;
+    right: 40px;
+}
