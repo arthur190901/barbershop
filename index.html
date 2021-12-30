@@ -2,7 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=940px">
+
     <title>Барбершоп Бородинский</title>
+
+    <link rel="stylesheet" href="node_modules/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="icon" href="favicon.ico" />
@@ -17,32 +21,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img
-            src="https://sergioneom.github.io/Barbershop-Thrandy/img/logo.png"
-            width="368"
-            height="195"
-            alt="Логотип Барбершопая"
-          />
-        </a>
-        <div class="main-header-bar">
-          <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
-              <li><a href="blank.html">Информация</a></li>
-              <li><a href="blank.html">Новости</a></li>
-              <li><a href="price.html">Прайс</a></li>
-              <li><a href="shop.html">Магазин</a></li>
-              <li><a href="blank.html">Контакты</a></li>
-            </ul>
-            <a class="enter-button" href="blank.html"
-              ><i class="fas fa-door-open"></i>Вход</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
+    @@include('./header.html')
 
     <main class="container">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
@@ -205,54 +184,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-containetr">
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <p>
-            Барбершоп "Бородинский"<br />
-            Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br />
-            <a class="footer-address" href="blank.html">Как нас найти?</a><br />
-            Телефон:
-            <a class="footer-phone" href="tel:+79888941599"
-              >+7 (988) 894-15-99</a
-            >
-          </p>
-        </section>
-
-        <section class="footer-social">
-          <h2>Давайте дружить!</h2>
-          <ul class="social">
-            <li>
-              <a class="social-button" href="https://www.vkontakte.ru">
-                <i class="link fab fa-vk fa-lg"></i>
-              </a>
-            </li>
-
-            <li>
-              <a class="social-button" href="https://www.facebook.com">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </a>
-            </li>
-
-            <li>
-              <a class="social-button" href="https://www.instagram.com">
-                <i class="fab fa-instagram fa-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="footer-develop">
-          <h2 class="visually-hidden">Разработано</h2>
-          <p class="footer-link">
-            <br class="develop" />
-            Разработано: <br />
-            <a class="button" href="https://github.com/arthur190901">GIT HUB</a>
-          </p>
-        </section>
-      </div>
-    </footer>
+    @@include('./footer.html')
 
     <section class="modal modal-login">
       <h2>вход Личный кабинет</h2>

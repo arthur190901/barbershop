@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Магазин</title>
+
+    <link rel="stylesheet" href="node_modules/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="icon" href="favicon.ico" />
@@ -17,43 +19,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <header class="main-header-two">
-      <nav class="main-navigation-two">
-        <div class="main-header-bar-two">
-          <div class="main-navigation-wrapper-two">
-            <a class="main-header-logo-two" href="index.html">
-              <img
-                src="https://uploads-ssl.webflow.com/5ca90d80d636b7fa305c2e62/5cab9e5f568a4a69231edfff_social_share.png"
-                width="200"
-                height="60"
-                alt="Логотип Барбершопая"
-              />
-            </a>
-
-            <ul class="site-navigation-two">
-              <li class="navigation-menu-two">
-                <a href="blank.html">Информация</a>
-              </li>
-              <li class="navigation-menu-two">
-                <a href="blank.html">Новости</a>
-              </li>
-              <li class="navigation-menu-two">
-                <a href="price.html">Прайс</a>
-              </li>
-              <li class="navigation-menu-two">
-                <a href="catalog,html">Магазин</a>
-              </li>
-              <li class="navigation-menu-two">
-                <a href="blank.html">Контакты</a>
-              </li>
-            </ul>
-            <a class="enter-button-two" href="blank.html"
-              ><i class="fas fa-door-open"></i>Вход</a
-            >
-          </div>
-        </div>
-      </nav>
-    </header>
+    @@include('./header.html')
 
     <main class="page-cotalog container">
       <h1 class="page-title">Средства для ухода</h1>
@@ -338,54 +304,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-containetr">
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <p>
-            Барбершоп "Бородинский"<br />
-            Адрес: г. Ростов-на-Дону, ул. Социалистическая 128 <br />
-            <a class="footer-address" href="blank.html">Как нас найти?</a><br />
-            Телефон:
-            <a class="footer-phone" href="tel:+79888941599"
-              >+7 (988) 894-15-99</a
-            >
-          </p>
-        </section>
-
-        <section class="footer-social">
-          <h2>Давайте дружить!</h2>
-          <ul class="social">
-            <li>
-              <a class="social-button" href="https://www.vkontakte.ru">
-                <i class="link fab fa-vk fa-lg"></i>
-              </a>
-            </li>
-
-            <li>
-              <a class="social-button" href="https://www.facebook.com">
-                <i class="fab fa-facebook-f fa-lg"></i>
-              </a>
-            </li>
-
-            <li>
-              <a class="social-button" href="https://www.instagram.com">
-                <i class="fab fa-instagram fa-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="footer-develop">
-          <h2 class="visually-hidden">Разработано</h2>
-          <p class="footer-link">
-            <br class="develop" />
-            Разработано: <br />
-            <a class="button" href="https://github.com/arthur190901">GIT HUB</a>
-          </p>
-        </section>
-      </div>
-    </footer>
+    @@include('./footer.html')
 
     <section class="modal modal-login">
       <h2>вход Личный кабинет</h2>
