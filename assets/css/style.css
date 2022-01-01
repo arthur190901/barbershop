@@ -182,14 +182,11 @@ a {
 
 .index-colums {
   margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 50px 80px;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url('../img/line.png'), url('../img/pattern-light.jpg');
-  background-position: center, 0 0;
-  background-repeat: no-repeat, repeat;
+  display: flex;
+  justify-content: space-between;
 }
 
 .index-colums h2 {
@@ -379,6 +376,10 @@ button:disabled {
   background-position: 0 0;
   background-repeat: repeat;
   outline-offset: -5px;
+}
+
+.contacts-column {
+  flex-basis: 49%;
 }
 
 .footer-contacts {
