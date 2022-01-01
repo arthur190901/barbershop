@@ -319,7 +319,7 @@ button:disabled {
 /* appointments */
 
 .appointment-item input {
-  /* width: 140px; */
+  width: 140px;
   padding: 8px 15px 7px;
   font: inherit;
   background-color: transparent;
