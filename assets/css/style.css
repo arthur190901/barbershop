@@ -193,7 +193,7 @@ a {
   padding: 50px 80px;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url('../img/line.png'), url('../img/pattern-light.jfif');
+  background-image: url('../img/line.png'), url('../img/pattern-light.jpg');
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
@@ -392,12 +392,6 @@ button:disabled {
   text-decoration: underline;
 }
 
-.footer-containetr {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .footer-address {
   color: var(--basic-white);
 }
@@ -432,7 +426,7 @@ button:disabled {
 .social-button {
   display: flex;
   flex-wrap: wrap;
-  margin: 4px;
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
   width: 43px;
@@ -607,7 +601,7 @@ button:disabled {
 /* modal map */
 
 .modal-map {
-  display: none;
+  /* display: none; */
   width: 766px;
   height: 560px;
   border: 7px solid white;
@@ -1040,4 +1034,31 @@ button:disabled {
 .list {
   display: block;
   flex-grow: 1;
+}
+
+.footer-section:last-child {
+  margin-right: 0;
+}
+
+.foter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.social {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.social-button--develop {
+  width: 160px;
+  margin: 0;
+}
+
+.footer-title {
+  margin-top: 0;
 }
