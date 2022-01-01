@@ -3,6 +3,10 @@
 
 /* variables */
 
+body {
+  box-sizing: border-box;
+}
+
 :root {
   --basic-black: #000;
   --basic-extra-dark: #242424;
@@ -695,7 +699,6 @@ button:disabled {
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
-  margin-left: 60px;
   list-style: none;
   justify-content: center;
 }
@@ -707,7 +710,9 @@ button:disabled {
   margin-bottom: 20px;
   transition: 0.3s;
   background-image: url('../img/buy-fon.jpg');
-  box-shadow: 0 0 20px rgba(0, 0, 0, 10%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .list-item:nth-child(3n) {
@@ -789,11 +794,9 @@ button:disabled {
 .page-cotalog {
   display: grid;
   width: 960px;
-  margin: 0 auto;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 240px 1fr;
   align-content: start;
   padding: 10px;
-  outline-offset: -5px;
 }
 
 .page-title {
@@ -813,52 +816,19 @@ button:disabled {
 
 .filter-product-list {
   list-style: none;
-  position: relative;
-  right: 40px;
+  padding: 0;
 }
 
-.filter-product {
-  width: 180px;
-}
-
-#filter-mr-natty {
-  transform: scale(1.6);
-}
-
-#filter-baxter-of-california {
-  transform: scale(1.6);
-}
-
-#filter-murrays {
-  transform: scale(1.6);
-}
-
-#filter-suavecito {
-  transform: scale(1.6);
-}
-
-#filter-american-crew {
-  transform: scale(1.6);
-}
-
-#filter-malin-goetz {
-  transform: scale(1.6);
-}
-
-#filter-shave {
-  transform: scale(1.6);
-}
-
-#filter-hair-care {
-  transform: scale(1.6);
-}
-
-#filter-accessories {
-  transform: scale(1.6);
+.filter-input-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .filter-option {
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 /* group-list */
@@ -867,10 +837,6 @@ button:disabled {
   list-style: none;
   position: relative;
   right: 40px;
-}
-
-.list-list h3 {
-  order: 1;
 }
 
 .list-list p {
@@ -903,7 +869,7 @@ button:disabled {
 }
 
 .item-price b {
-  width: 112px;
+  width: 100px;
   padding: 13px 25px 11px;
   box-sizing: border-box;
   font-size: 14px;
@@ -912,7 +878,7 @@ button:disabled {
 }
 
 .item-price button {
-  padding: 13px 20.5px 11px;
+  padding: 13px 19px 11px;
   margin-right: 0;
   line-height: 15px;
 }
@@ -1034,16 +1000,27 @@ button:disabled {
   margin-right: 27px;
 }
 
+.label-text {
+  white-space: nowrap;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .just-fieldset {
   border: none;
 }
 
 .filter-product-fieldsrt legend {
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .filter-product-fieldsrt {
+  padding: 0;
+  margin: 0;
   border: none;
+  margin-bottom: 40px;
 }
 
 .group-fieldset {
@@ -1058,4 +1035,9 @@ button:disabled {
 .image-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.list {
+  display: block;
+  flex-grow: 1;
 }

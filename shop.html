@@ -3,17 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Магазин</title>
-
-    <link rel="stylesheet" href="node_modules/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.png" />
   </head>
 
   <body class="page-body inner-page">
-    <noscript>
-      Включите JavaScript!!!
-    </noscript>
+    <noscript> Включите JavaScript!!! </noscript>
     <script
       src="https://kit.fontawesome.com/a812ab7cf0.js"
       crossorigin="anonymous"
@@ -50,7 +45,6 @@
           target="_blank"
         >
           <section>
-
             <fieldset class="filter-product-fieldsrt">
               <legend>Производители:</legend>
               <ul class="filter-product-list">
@@ -62,19 +56,21 @@
                     id="filter-baxter-of-california"
                     checked
                   />
-                  <label for="filter-baxter-of-california"
+                  <label class="label-text" for="filter-baxter-of-california"
                     >Baxter-Of-California</label
                   >
                 </li>
 
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input"
+                    class="filter-input-checkbox filter-input"
                     type="checkbox"
                     name="mr-natty"
                     id="filter-mr-natty"
                   />
-                  <label for="filter-mr-natty">Mr-Natty</label>
+                  <label class="label-text" for="filter-mr-natty"
+                    >Mr-Natty</label
+                  >
                 </li>
 
                 <li class="filter-option filter-checkbox">
@@ -84,7 +80,9 @@
                     name="suavecito"
                     id="filter-suavecito"
                   />
-                  <label for="filter-suavecito">Suavecito</label>
+                  <label class="label-text" for="filter-suavecito"
+                    >Suavecito</label
+                  >
                 </li>
 
                 <li class="filter-option filter-checkbox">
@@ -94,7 +92,9 @@
                     name="malin-goetz"
                     id="filter-malin-goetz"
                   />
-                  <label for="filter-malin-goetz">Malin+Goetz</label>
+                  <label class="label-text" for="filter-malin-goetz"
+                    >Malin+Goetz</label
+                  >
                 </li>
 
                 <li class="filter-option filter-checkbox">
@@ -104,7 +104,9 @@
                     name="murrays"
                     id="filter-murrays"
                   />
-                  <label for="filter-murrays">Murray's</label>
+                  <label class="label-text" for="filter-murrays"
+                    >Murray's</label
+                  >
                 </li>
 
                 <li class="filter-option filter-checkbox">
@@ -115,46 +117,56 @@
                     id="filter-american-crew"
                     checked
                   />
-                  <label for="filter-american-crew">American Crew</label>
+                  <label class="label-text" for="filter-american-crew"
+                    >American Crew</label
+                  >
                 </li>
               </ul>
             </fieldset>
           </section>
 
           <section class="radio-list">
-
-            <fieldset class="group-fieldset">
+            <fieldset class="filter-product-fieldsrt">
               <legend>Группы товаров:</legend>
-              <ul class="group-list">
-                <li class="group-item">
+              <ul class="filter-product-list">
+                <li class="filter-option">
                   <input
+                    class="filter-input-checkbox"
                     type="radio"
                     name="product-group"
                     value="shaving"
                     id="filter-shave"
                   />
-                  <label for="filter-shave">Бритвенные принадлежности</label>
+                  <label class="label-text" for="filter-shave"
+                    >Бритвенные принадлежности</label
+                  >
                 </li>
 
-                <li class="group-item">
+                <li class="filter-option">
                   <input
+                    class="filter-input-checkbox"
                     type="radio"
                     name="product-group"
                     value="hair-care"
                     id="filter-hair-care"
                     checked
                   />
-                  <label for="filter-hair-care">Средства для ухода</label>
+                  <label class="label-text" for="filter-hair-care"
+                    >Средства для ухода</label
+                  >
                 </li>
 
-                <li class="group-item">
+                <li class="filter-option">
                   <input
+                    class="filter-input-checkbox"
                     type="radio"
                     name="product-group"
                     value="accessories"
                     id="filter-accessories"
                   />
-                  <label for="filter-accessories">Аксессуары</label>
+                  <label class="label-text" for="filter-accessories"
+                    >Аксессуары</label
+                  >
                 </li>
               </ul>
             </fieldset>
@@ -169,15 +181,13 @@
           <li class="list-item">
             <h3>Набор для путешествий «Baxter Of California»</h3>
             <a class="list" href="product-card.html">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://www.darklyhandsome.com/1782-large_default/trousse-voyage-soins-homme-baxter.jpg"
-                  width="220"
-                  height="165"
-                  alt="Набор для путешествий «Baxter Of California»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://www.darklyhandsome.com/1782-large_default/trousse-voyage-soins-homme-baxter.jpg"
+                width="220"
+                height="165"
+                alt="Набор для путешествий «Baxter Of California»"
+              />
             </a>
             <p class="item-price">
               <b>2999₽</b>
@@ -188,15 +198,13 @@
           <li class="list-item">
             <h3>Увлажняющий кондиционер «Baxter Of California»</h3>
             <a class="list" href="#">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://malegrooming.com.au/wp-content/uploads/2018/10/baxdailyproteinshampoo.jpg"
-                  width="220"
-                  height="165"
-                  alt="Увлажняющий кондиционер «Baxter Of California»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://malegrooming.com.au/wp-content/uploads/2018/10/baxdailyproteinshampoo.jpg"
+                width="220"
+                height="165"
+                alt="Увлажняющий кондиционер «Baxter Of California»"
+              />
             </a>
             <p class="item-price">
               <b>750₽</b>
@@ -207,15 +215,13 @@
           <li class="list-item">
             <h3>Гель для волос «Suavecito»</h3>
             <a class="list" href="#">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://cf.shopee.com.my/file/2887e288de962e15b0b2778ae954dba0"
-                  width="220"
-                  height="165"
-                  alt="Гель для волос «Suavecito»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://cf.shopee.com.my/file/2887e288de962e15b0b2778ae954dba0"
+                width="220"
+                height="165"
+                alt="Гель для волос «Suavecito»"
+              />
             </a>
             <p class="item-price">
               <b>290₽</b>
@@ -226,15 +232,13 @@
           <li class="list-item">
             <h3>Глина для укладки волос «American Crew»</h3>
             <a class="list" href="#">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://www.proficosmetics.ru/upload/iblock/789/7209394000_2.jpg"
-                  width="220"
-                  height="165"
-                  alt="Глина для укладки волос «American Crew»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://www.proficosmetics.ru/upload/iblock/789/7209394000_2.jpg"
+                width="220"
+                height="165"
+                alt="Глина для укладки волос «American Crew»"
+              />
             </a>
             <p class="item-price">
               <b>500₽</b>
@@ -245,15 +249,13 @@
           <li class="list-item">
             <h3>Гель для волос «American Crew»</h3>
             <a class="list" href="#">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://evapro.ru/pic/big_copy/196286.jpg"
-                  width="220"
-                  height="165"
-                  alt="Гель для волос «American Crew»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://evapro.ru/pic/big_copy/196286.jpg"
+                width="220"
+                height="165"
+                alt="Гель для волос «American Crew»"
+              />
             </a>
             <p class="item-price">
               <b>300₽</b>
@@ -264,15 +266,13 @@
           <li class="list-item">
             <h3>Набор для бритья «Baxter Of California»</h3>
             <a class="list" href="#">
-              <p>
-                <img
-                  class="cotalog-image"
-                  src="https://www.elitebs.ru/image/cache/catalog/mens/9/216212005-baxter-of-california-best-badger-kist-dlya-britya-chernaya-sn-1200x800.jpg"
-                  width="220"
-                  height="165"
-                  alt="Набор для бритья «Baxter Of California»"
-                />
-              </p>
+              <img
+                class="cotalog-image"
+                src="https://www.elitebs.ru/image/cache/catalog/mens/9/216212005-baxter-of-california-best-badger-kist-dlya-britya-chernaya-sn-1200x800.jpg"
+                width="220"
+                height="165"
+                alt="Набор для бритья «Baxter Of California»"
+              />
             </a>
             <p class="item-price">
               <b>3999₽</b>
