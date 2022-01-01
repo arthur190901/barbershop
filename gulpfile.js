@@ -2,7 +2,6 @@ import gulp from 'gulp'
 import htmlmin from 'gulp-htmlmin'
 import fileinclude from 'gulp-file-include'
 import cssmin from 'gulp-cssmin'
-import importCss from 'gulp-import-css'
 import image from 'gulp-image'
 import clean from 'gulp-clean'
 
