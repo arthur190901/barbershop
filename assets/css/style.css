@@ -601,7 +601,7 @@ button:disabled {
 /* modal map */
 
 .modal-map {
-  /* display: none; */
+  display: none;
   width: 766px;
   height: 560px;
   border: 7px solid white;
