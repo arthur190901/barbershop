@@ -21,10 +21,6 @@ function html() {
 }
 gulp.task(html);
 
-
-
-
-
 function css() {
     return gulp.src('assets/css/style.css')
         .pipe(cssmin())
@@ -32,18 +28,13 @@ function css() {
 }
 gulp.task(css);
 
-
-
 function font() {
   return gulp.src('assets/fonts/*.ttf').pipe(gulp.dest('build/assets/fonts'))
 }
 gulp.task(font)
 
-
-
-
 function img() {
-  return gulp.src('assets/img/*.png , jpg')
+  return gulp.src('assets/img/*')
   .pipe(image({
     pngquant: true,
     optipng: false,
@@ -59,13 +50,12 @@ function img() {
 }
 gulp.task(img);
 
-
-
 function deleteBuild() {
   return gulp.src('build', { read: false, allowEmpty: true }).pipe(clean())
 }
 gulp.task(deleteBuild)
-gulp.task('start', gulp.series(deleteBuild, html, font, css))
+
+gulp.task('start', gulp.series(deleteBuild, html, font, css, img))
 
 
     
