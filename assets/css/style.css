@@ -34,12 +34,6 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100%;
-  display: grid;
-  grid-template-rows:
-    min-content
-    1fr
-    min-content;
-  align-content: start;
 }
 
 a {
@@ -610,13 +604,6 @@ button:disabled {
 /* another pages */
 
 .page-body {
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-black);
@@ -790,7 +777,7 @@ button:disabled {
   width: 960px;
   grid-template-columns: 240px 1fr;
   align-content: start;
-  padding: 10px;
+  padding: 0;
 }
 
 .page-title {
@@ -1061,4 +1048,13 @@ button:disabled {
 
 .footer-title {
   margin-top: 0;
+}
+
+.footer-addres {
+  width: 350px;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
 }
