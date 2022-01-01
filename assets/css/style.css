@@ -367,9 +367,11 @@ button:disabled {
 
 /* footer */
 
+main {
+  margin-bottom: 40px !important;
+}
+
 .main-footer {
-  padding: 30px;
-  margin-top: 65px;
   color: var(--basic-white);
   background-color: var(--basic-extra-dark);
   background-image: url('../img/pattern-dark.jpg');
@@ -380,6 +382,18 @@ button:disabled {
 
 .contacts-column {
   flex-basis: 49%;
+  position: relative;
+}
+
+.contacts-column-decorete::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/line.png');
+  width: 5px;
+  height: 100%;
+  background-position: 50% 50%;
+  top: 0;
+  right: -5px;
 }
 
 .footer-contacts {
@@ -1036,7 +1050,7 @@ button:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 900px;
+  padding: 30px;
 }
 
 .social {
