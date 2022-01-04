@@ -1,6 +1,10 @@
 @import url('node_modules/normalize.css/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
-
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('../fonts/PTSansNarrow-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 /* variables */
 
 body {
@@ -1046,6 +1050,10 @@ main {
   margin-right: 0;
 }
 
+.footer-section {
+  text-align: center;
+}
+
 .foter-container {
   display: flex;
   align-items: center;
@@ -1093,8 +1101,8 @@ main {
 .list-description-item::before {
   content: '';
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #000;
   transform: rotate(45deg);
   display: block;

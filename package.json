@@ -21,6 +21,7 @@
   "homepage": "https://github.com/arthur190901/barbershop#readme",
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
+    "merge-deep": "^3.0.3",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
