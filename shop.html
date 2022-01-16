@@ -305,7 +305,7 @@
 
     @@include('./footer.html')
 
-    <section class="modal modal-login">
+    <section class="modal modal-login modal-show">
       <h2>вход Личный кабинет</h2>
       <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
       <form
@@ -321,6 +321,7 @@
             type="email"
             name="login"
             placeholder="Bведите логин"
+            required
           />
         </p>
         <p>
@@ -331,6 +332,7 @@
             type="password"
             name="password"
             placeholder="Bведите пароль"
+            required
           />
         </p>
 
@@ -352,5 +354,23 @@
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+
+    <script>
+      const link = document.querySelector('.enter-button');
+      const popup = document.querySelector('.modal-login');
+      const closePage = document.querySelector('.modal-close');
+  
+  
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+  
+      closePage.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+      </script>
+      
   </body>
 </html>

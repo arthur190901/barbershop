@@ -25,6 +25,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.7",
     "browsersync": "^0.0.1-security",
     "fonter": "^0.0.1",
     "gulp": "^4.0.2",

@@ -188,7 +188,7 @@
 
     @@include('./footer.html')
 
-    <section class="modal modal-login">
+    <section class="modal modal-login modal-show">
       <h2>вход Личный кабинет</h2>
       <p class="modal-description">Введите пожалуйста свой логин и пароль:</p>
       <form
@@ -204,6 +204,7 @@
             type="email"
             name="login"
             placeholder="Bведите логин"
+            required
           />
         </p>
         <p>
@@ -214,6 +215,7 @@
             type="password"
             name="password"
             placeholder="Bведите пароль"
+            required
           />
         </p>
 
@@ -228,7 +230,7 @@
 
         <p>
           <a class="restore" href="#">Забыл пароль</a>
-          <button class="enter-button-two" type="submit">Войти</button>
+          <button class="enter-button" type="submit">Войти</button>
         </p>
 
         <a class="registration" href="#">Зарегистрироваться</a>
@@ -248,5 +250,68 @@
       ></iframe>
       <button class="modal-close" type="button"></button>
     </section>
+
+
+    <script>
+    const link = document.querySelector('.enter-button');
+    const popup = document.querySelector('.modal-login');
+    const closePage = document.querySelector('.modal-close');
+    const login = popup.querySelector("[name=login]");
+    const password = popup.querySelector("[name=password");
+    const form = popup.querySelector("form");
+    // const storage = localStorage("login");
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup.classList.contains("modal-show")) {
+          evt.preventDefault();
+          popup.classList.remove("modal-show");
+        }
+      }
+    });
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+      if (storage) {
+        login.value = storage;
+        password.focus();
+      } else {
+        login.focus();
+      }
+
+      login.focus();
+      if (storage) {
+        login.value = storage;
+      }
+    });
+
+    closePage.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+
+    form.addEventListener("submit", function (evt) {
+          if (!login.value || !password.value){
+            evt.preventDefault();
+          }  else {
+            if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+          }
+        }
+        });
+
+        let isStorageSupport = true;
+        const storage = "";
+
+        try {
+          storage = localStorage.getItem("login");
+        } catch (err) {
+          isStorageSupport = false;
+        }
+    
+    </script>
+
   </body>
 </html>

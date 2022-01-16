@@ -4,6 +4,7 @@ import fileinclude from 'gulp-file-include'
 import cssmin from 'gulp-cssmin'
 import image from 'gulp-image'
 import clean from 'gulp-clean'
+import browsersync from 'browser-sync'
 
 function html() {
   return gulp
