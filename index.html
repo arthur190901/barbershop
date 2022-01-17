@@ -259,6 +259,9 @@
     const login = popup.querySelector("[name=login]");
     const password = popup.querySelector("[name=password");
     const form = popup.querySelector("form");
+    const mapLink = document.querySelector(".footer-address");
+    const mapPopup = document.querySelector(".modal-map");
+    const mapClose = mapPopup.querySelector(".modal-close");
     // const storage = localStorage("login");
 
     window.addEventListener("keydown", function (evt) {
@@ -310,6 +313,25 @@
         } catch (err) {
           isStorageSupport = false;
         }
+
+        mapLink.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          mapPopup.classList.add("modal-show");
+        });
+
+        mapClose.addEventListener("click", function(evt) {
+          evt.preventDefault();
+          mapPopup.classList.remove("modal-show");
+        });
+
+        window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal-show")) {
+          evt.preventDefault();
+          popup.classList.remove("modal-show");
+        }
+      }
+    });
     
     </script>
 
