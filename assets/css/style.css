@@ -71,9 +71,6 @@ a {
 /* main header */
 
 .main-header {
-  position: fixed;
-  right: 0;
-  left: 0;
   margin-bottom: 70px;
   outline-offset: -5px;
 }
@@ -81,7 +78,12 @@ a {
 /* main-navigation */
 
 .main-navigation {
+  position: fixed;
   display: grid;
+  right: 0;
+  left: 0;
+  top: 0;
+
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
@@ -122,8 +124,8 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0;
   padding: 0 10px;
+  padding-top: 70px;
 }
 
 .site-navigation a,
