@@ -58,9 +58,14 @@ function img() {
 }
 gulp.task(img)
 
+function js() {
+  return gulp.src('script.js').pipe(gulp.dest('build'))
+}
+gulp.task(js)
+
 function deleteBuild() {
   return gulp.src('build', { read: false, allowEmpty: true }).pipe(clean())
 }
 gulp.task(deleteBuild)
 
-gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img))
+gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img, js))
