@@ -71,14 +71,15 @@ a {
 /* main header */
 
 .main-header {
+  position: fixed;
   margin-bottom: 70px;
   outline-offset: -5px;
+  z-index: 10000;
 }
 
 /* main-navigation */
 
 .main-navigation {
-  position: fixed;
   display: grid;
   right: 0;
   left: 0;

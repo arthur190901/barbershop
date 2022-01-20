@@ -59,7 +59,7 @@ function img() {
 gulp.task(img)
 
 function js() {
-  return gulp.src('script.js').pipe(gulp.dest('build'))
+  return gulp.src('assets/js/script.js').pipe(gulp.dest('build/assets/js'))
 }
 gulp.task(js)
 
