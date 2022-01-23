@@ -140,6 +140,7 @@
                   id="appointment-date"
                   type="text"
                   name="date"
+                  required
                   placeholder="01.01.2022"
                 />
               </div>
@@ -150,6 +151,7 @@
                   id="appointment-time"
                   type="text"
                   name="time"
+                  required
                   placeholder="10:00"
                 />
               </div>
@@ -160,6 +162,7 @@
                   id="appointment-name"
                   type="text"
                   name="name"
+                  required
                   placeholder="Иван"
                 />
               </div>
@@ -170,6 +173,7 @@
                   id="appointment-phone"
                   type="text"
                   name="phone"
+                  required
                   placeholder="+7-000-000-00-00"
                 />
               </div>
@@ -227,10 +231,10 @@
 
         <p>
           <a class="restore" href="#">Забыл пароль</a>
-          <button class="enter-button" type="submit">Войти</button>
+          <button class="enter-button" id="check" type="submit">Войти</button>
         </p>
 
-        <a class="registration" href="#">Зарегистрироваться</a>
+        <a class="registration" href="login.html">Зарегистрироваться</a>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
