@@ -1132,3 +1132,24 @@ main {
 .modal-show {
   display: block;
 }
+
+/* .firstname {
+}
+
+.lastname {
+}
+
+.login-reg {
+}
+
+.password-reg {
+} */
+
+.registration-items {
+  text-align: center;
+  background-color: black;
+}
+
+.firstname {
+  margin-bottom: 5px;
+}

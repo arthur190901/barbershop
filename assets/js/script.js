@@ -90,39 +90,4 @@
       alert('welcome');
       else alert('incorrect login or password');
   }
-
-
-
-
-
-
-  const mainPhoto = document.querySelector('.main-photo');
-
-  if (mainPhoto) {
-
-      const photoItems = document.querySelectorAll('.photo-items');
-      const photoList = document.querySelector('.photo-list');
-
-      for (const i = 0; i < photoItems.length; i++) {
-          clickPhoto(photoItems[i]);
-      }
-
-      function clickPhoto(itemPhoto) {
-           itemPhoto.addEventListener('click', function() {
-            getPhotoSrc(itemPhoto);
-          });
-      };
-
-      function getPhotoSrc(itemPhoto) {
-          const photoSrc = itemPhoto.getAttribute('src');
-          photoList.setAttribute("src", photoSrc);
-      };
-
-  }
-
-
-
-
-
-
 }
