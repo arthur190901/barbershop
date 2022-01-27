@@ -3,11 +3,13 @@ import htmlmin from 'gulp-htmlmin'
 import fileinclude from 'gulp-file-include'
 import cssmin from 'gulp-cssmin'
 import image from 'gulp-image'
+import jsmin from 'gulp-jsmin'
 import clean from 'gulp-clean'
+import browsersync from 'browser-sync'
 
 function html() {
   return gulp
-    .src(['index.html', 'shop.html', 'product-card.html'])
+    .src(['index.html', 'shop.html', 'product-card.html', 'login.html'])
     .pipe(
       fileinclude({
         prefix: '@@',
@@ -57,9 +59,16 @@ function img() {
 }
 gulp.task(img)
 
+function js() {
+  return gulp.src(['assets/js/script.js', 'assets/js/login.js'])
+    .pipe(jsmin())
+    .pipe(gulp.dest('build/assets/js'))
+}
+gulp.task(js)
+
 function deleteBuild() {
   return gulp.src('build', { read: false, allowEmpty: true }).pipe(clean())
 }
 gulp.task(deleteBuild)
 
-gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img))
+gulp.task('start', gulp.series(deleteBuild, html, font, favicon, css, img, js))

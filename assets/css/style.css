@@ -71,14 +71,22 @@ a {
 /* main header */
 
 .main-header {
+  position: fixed;
+  left: 0;
+  right: 0;
   margin-bottom: 70px;
   outline-offset: -5px;
+  z-index: 10000;
 }
 
 /* main-navigation */
 
 .main-navigation {
   display: grid;
+  right: 0;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 15px;
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
@@ -119,8 +127,8 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0;
   padding: 0 10px;
+  padding-top: 140px;
 }
 
 .site-navigation a,
@@ -465,7 +473,7 @@ main {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -474,10 +482,11 @@ main {
   margin: auto;
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url('../img/pattern-dark.jpg');
+  background-image: url('../img/pattern-light.jpg');
   background-position: 0 0;
   background-repeat: repeat;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 70%);
+  box-shadow: 0 30px 50px;
+  /* box-shadow: 0 30px 50px rgba(0, 0, 0, 70%); */
 }
 
 .modal-login h2 {
@@ -504,7 +513,7 @@ main {
   background-image: url('../img/pattern-dark.jpg');
   background-position: 270px center;
   background-repeat: no-repeat;
-  width: 97%;
+  width: 88%;
   font-family: inherit;
   padding-top: 10px;
   padding-bottom: 7px;
@@ -515,7 +524,7 @@ main {
   background-image: url('../img/pattern-dark.jpg');
   background-position: 270px center;
   background-repeat: no-repeat;
-  width: 97%;
+  width: 88%;
   font-family: inherit;
   padding-top: 10px;
   padding-bottom: 7px;
@@ -571,7 +580,7 @@ main {
   top: 120px;
   bottom: auto;
   width: 300px;
-  padding: 50px 80px;
+  padding: 20px 70px;
 }
 
 .modal-description {
@@ -1061,6 +1070,12 @@ main {
   padding: 30px;
 }
 
+.footer-container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .social {
   padding: 0;
   list-style: none;
@@ -1112,4 +1127,29 @@ main {
 
 .product-card-section {
   flex-basis: 45%;
+}
+
+.modal-show {
+  display: block;
+}
+
+/* .firstname {
+}
+
+.lastname {
+}
+
+.login-reg {
+}
+
+.password-reg {
+} */
+
+.registration-items {
+  text-align: center;
+  background-color: black;
+}
+
+.firstname {
+  margin-bottom: 5px;
 }

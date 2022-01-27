@@ -7,14 +7,11 @@
     <title>Барбершоп "Бородинский" Магазин</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="favicon.png" />
+    <script src="https://kit.fontawesome.com/a812ab7cf0.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="site-body page-body">
     <noscript> Включите JavaScript!!! </noscript>
-    <script
-      src="https://kit.fontawesome.com/a812ab7cf0.js"
-      crossorigin="anonymous"
-    ></script>
 
     @@include('./header.html')
 
@@ -99,11 +96,17 @@
             <div class="just-fieldset">
               <h2>В НАБОР ВХОДЯТ:</h2>
               <ul class="list-description">
-                <li class="list-description-item">СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</li>
+                <li class="list-description-item">
+                  СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)
+                </li>
                 <li class="list-description-item">УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</li>
                 <li class="list-description-item">КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</li>
-                <li class="list-description-item">КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</li>
-                <li class="list-description-item">УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</li>
+                <li class="list-description-item">
+                  КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)
+                </li>
+                <li class="list-description-item">
+                  УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА
+                </li>
               </ul>
             </div>
           </div>
@@ -129,6 +132,7 @@
             type="email"
             name="login"
             placeholder="Bведите логин"
+            required
           />
         </p>
         <p>
@@ -139,6 +143,7 @@
             type="password"
             name="password"
             placeholder="Bведите пароль"
+            required
           />
         </p>
 
@@ -160,5 +165,6 @@
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="assets/js/login.js"></script>
   </body>
 </html>

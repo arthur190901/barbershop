@@ -6,15 +6,12 @@
     <title>Барбершоп Бородинский</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="favicon.png" />
+    <script src="https://kit.fontawesome.com/a812ab7cf0.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="site-body">
     <noscript> Включите JavaScrip!!! </noscript>
-    <script
-      src="https://kit.fontawesome.com/a812ab7cf0.js"
-      crossorigin="anonymous"
-    ></script>
-
+    
     @@include('./header.html')
 
     <main class="container">
@@ -121,7 +118,7 @@
             пн-пт: с 10:00 до 22:00<br />
             сб-вс: с 10:00 до 22:00
           </p>
-          <a class="button" href="#">Как проехать</a>
+          <a class="button modal-button" href="#">Как проехать</a>
           <a class="button" href="#">Обратная связь</a>
         </section>
 
@@ -143,6 +140,7 @@
                   id="appointment-date"
                   type="text"
                   name="date"
+                  required
                   placeholder="01.01.2022"
                 />
               </div>
@@ -153,6 +151,7 @@
                   id="appointment-time"
                   type="text"
                   name="time"
+                  required
                   placeholder="10:00"
                 />
               </div>
@@ -163,6 +162,7 @@
                   id="appointment-name"
                   type="text"
                   name="name"
+                  required
                   placeholder="Иван"
                 />
               </div>
@@ -173,6 +173,7 @@
                   id="appointment-phone"
                   type="text"
                   name="phone"
+                  required
                   placeholder="+7-000-000-00-00"
                 />
               </div>
@@ -204,6 +205,7 @@
             type="email"
             name="login"
             placeholder="Bведите логин"
+            required
           />
         </p>
         <p>
@@ -214,6 +216,7 @@
             type="password"
             name="password"
             placeholder="Bведите пароль"
+            required
           />
         </p>
 
@@ -228,10 +231,10 @@
 
         <p>
           <a class="restore" href="#">Забыл пароль</a>
-          <button class="enter-button-two" type="submit">Войти</button>
+          <button class="enter-button" id="check" type="submit">Войти</button>
         </p>
 
-        <a class="registration" href="#">Зарегистрироваться</a>
+        <a class="registration" href="login.html">Зарегистрироваться</a>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
@@ -248,5 +251,9 @@
       ></iframe>
       <button class="modal-close" type="button"></button>
     </section>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/login.js"></script>
+
   </body>
 </html>
