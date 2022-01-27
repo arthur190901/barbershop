@@ -60,7 +60,7 @@ function img() {
 gulp.task(img)
 
 function js() {
-  return gulp.src('assets/js/script.js')
+  return gulp.src(['assets/js/script.js', 'assets/js/login.js'])
     .pipe(jsmin())
     .pipe(gulp.dest('build/assets/js'))
 }
